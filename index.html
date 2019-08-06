@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main1.css">
+    <title>Animation playground</title>
+
+</head>
+<body>
+<a href="" class="el">
+    <img src="./images/image%20(2).png" alt="obrazek" class="el-img">
+
+    <div class="el-description">
+        <h2 class="el-title">Przykładowy projekt</h2>
+        <p class="el-text">Przykładowy tekst</p>
+    </div>
+</a>
+
+<div class="grid">
+    <div class="test1">
+        <div class="loading"></div>
+    </div>
+
+    <div class="test2">
+        <div class="scroll"></div>
+    </div>
+    <div class="test3">
+        <div class="loading2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+    <div class="test4">
+        <div class="loading3">
+            WEEKEND OFF
+        </div>
+    </div>
+    <div class="test5"></div>
+</div>
+
+<script>
+    const loading3 = document.querySelector('.loading3');
+    loading3.innerHTML = [...loading3.innerText].map(el => `<span>${el}</span>`).join('');
+</script>
+
+</body>
+</html>
